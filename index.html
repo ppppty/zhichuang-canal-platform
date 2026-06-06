@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>运河支队日记 | 智创运河互动影视游戏</title>
+    <meta name="description" content="AI赋能红色文化互动影视游戏平台 — 沿着运河进入烽火年代，在选择中亲历信念与成长。" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="运河支队日记 | 智创运河互动影视游戏" />
+    <meta property="og:description" content="沿着运河进入烽火年代，在选择中亲历信念与成长。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./assets/video-poster-canal-war.png" />
+    <meta property="og:site_name" content="智创运河" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="运河支队日记 | 智创运河互动影视游戏" />
+    <meta name="twitter:description" content="沿着运河进入烽火年代，在选择中亲历信念与成长。" />
+    <meta name="twitter:image" content="./assets/video-poster-canal-war.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700;900&family=Noto+Serif+SC:wght@400;700;900&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <!-- ═══════════════ 首页 ═══════════════ -->
+      <section class="start-screen" id="home" aria-label="《运河支队日记》游戏主视觉">
+        <div class="ambient-layer"></div>
+
+        <header class="game-topbar">
+          <a class="platform-brand" href="#home" aria-label="智创运河首页">
+            <span>智创运河</span>
+          </a>
+          <div class="menu-status" aria-label="游戏状态">
+            <span>互动影游</span>
+            <span>5 章主线</span>
+            <span>多结局</span>
+          </div>
+        </header>
+
+        <div class="hero-wrapper">
+          <div class="hero-title">
+            <div class="chapter-kicker">
+              <span>1938</span>
+              <i></i>
+              <span>运河两岸</span>
+            </div>
+            <h1>运河支队日记</h1>
+            <p class="tagline">沿着运河进入烽火年代，在选择中亲历信念与成长。</p>
+            <div class="identity-intro" data-identity-intro>
+              <p class="identity-text">1938 年冬，你叫<strong>陈水生</strong>，在运河边长大。战火烧到了家乡，你即将加入运河支队，踏上一条改变命运的道路。</p>
+              <p class="identity-prompt"><span>你即将以陈水生的身份进入 1938 年的运河两岸</span><span class="prompt-em">—— 准备好了吗？</span></p>
+            </div>
+            <button class="enter-game" type="button" data-enter-game>
+              <span>进入游戏</span>
+            </button>
+          </div>
+
+          <nav class="feature-strip" aria-label="游戏功能入口">
+            <button class="feature-link" type="button" data-feature="timeline">
+              <span class="link-seal">卷</span>
+              <div>
+                <strong>运河风云录</strong>
+                <small>烽火纪事 · 史海钩沉</small>
+              </div>
+            </button>
+            <button class="feature-link" type="button" data-feature="characters">
+              <span class="link-seal">谱</span>
+              <div>
+                <strong>群英人物谱</strong>
+                <small>铁血丹心 · 口述记忆</small>
+              </div>
+            </button>
+            <button class="feature-link" type="button" data-feature="report">
+              <span class="link-seal">鉴</span>
+              <div>
+                <strong>个人体验档案</strong>
+                <small>依据选择 · 点击生成</small>
+              </div>
+            </button>
+          </nav>
+        </div>
+      </section>
+
+      <!-- ═══════════════ 视频页 ═══════════════ -->
+      <section class="video-screen" id="game" aria-label="《运河支队日记》视频体验">
+        <div class="video-frame">
+          <video
+            id="gameVideo"
+            preload="metadata" playsinline
+            aria-label="《运河支队日记》游戏视频部分"
+          >
+            视频即将加载…
+          </video>
+          <div class="video-loading" data-video-loading>
+            <div class="loading-spinner" aria-hidden="true"></div>
+            <p data-video-loading-text>视频加载中…</p>
+          </div>
+
+          <!-- 视频悬浮控件层 -->
+          <div class="video-controls-overlay">
+            <div class="video-ctrls-left">
+              <button class="back-home" type="button" data-back-home>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+                <span>返回首页</span>
+              </button>
+              <button class="audio-toggle-inline" type="button" data-audio-toggle-inline aria-label="环境音效" title="环境音效">
+                <span class="audio-icon-inline">🔇</span>
+              </button>
+              <button class="pause-toggle-inline" type="button" data-video-pause aria-label="暂停视频" title="暂停/继续">
+                <span class="pause-icon-inline" data-video-pause-icon>Ⅱ</span>
+                <span data-video-pause-text>暂停</span>
+              </button>
+            </div>
+            <div class="chapter-now" aria-label="当前章节">
+              <span>CANAL DIARY</span>
+              <strong>运河支队日记</strong>
+            </div>
+            <button class="ai-trigger-inline" type="button" data-feature="ai" aria-label="AI 助手">
+              <span class="ai-trigger-dot"></span>
+              <span>AI智囊</span>
+            </button>
+          </div>
+
+          <!-- 进度条 — 决策点导航 -->
+          <div class="game-progress-bar" data-game-progress>
+            <div class="progress-track" data-progress-track>
+              <div class="progress-segments" data-progress-segments></div>
+              <div class="progress-cursor" data-progress-cursor></div>
+            </div>
+          </div>
+
+          <!-- 决策面板 -->
+          <div class="decision-panel" data-decision-panel>
+            <div class="decision-overlay"></div>
+            <div class="decision-card">
+              <div class="decision-card-inner">
+                <div class="decision-badge">剧情选择</div>
+                <h2 class="decision-title" data-decision-title></h2>
+                <p class="decision-desc" data-decision-desc></p>
+                <div class="decision-choices" data-decision-choices></div>
+                <div class="decision-hint">你的选择将影响剧情走向</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════ 全局遮罩 ═══════════════ -->
+      <div class="global-overlay" data-global-overlay></div>
+
+      <!-- ═══════════════ AI 交互系统 · 浮窗 + 弹窗 ═══════════════ -->
+      <button class="ai-float-btn" type="button" data-feature="ai" aria-label="AI 助手">
+        <span class="ai-float-icon">AI</span>
+        <span class="ai-float-pulse"></span>
+      </button>
+
+      <dialog class="ai-dialog" id="ai-dialog" aria-label="运河智囊">
+        <div class="ai-panel">
+          <div class="ai-panel-hd">
+            <button class="ai-panel-close" type="button" data-close-ai>✕</button>
+            <span class="ai-panel-seal">AI</span>
+            <div>
+              <strong>AI 助手</strong>
+              <small>剧情问答 · 有问必答</small>
+            </div>
+          </div>
+          <div class="ai-chat-body" data-ai-chat-body>
+            <div class="ai-message ai-system">
+              <p>同志你好。我是随行的运河智囊，关于运河支队的历史、剧情走向、人物命运，尽管问我——知无不言。</p>
+            </div>
+          </div>
+          <div class="ai-quick-asks" data-ai-quick-asks>
+            <button class="ai-quick-btn" data-ai-quick="运河支队是什么时候成立的？">运河支队成立</button>
+            <button class="ai-quick-btn" data-ai-quick="护送陈毅的任务是怎样的？">护送陈毅</button>
+            <button class="ai-quick-btn" data-ai-quick="炸桥行动发生了什么？">炸桥行动</button>
+            <button class="ai-quick-btn" data-ai-quick="陈水生是谁？">陈水生是谁</button>
+          </div>
+          <div class="ai-input-area">
+            <input type="text" class="ai-input" data-ai-input placeholder="输入你的问题…" maxlength="200" />
+            <button class="ai-send-btn" type="button" data-ai-send>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="4" x2="12" y2="20"/><polyline points="6 10 12 4 18 10"/></svg>
+            </button>
+          </div>
+        </div>
+      </dialog>
+
+      <!-- ═══════════════ 历史档案库 · 运河作战地图 ═══════════════ -->
+      <section class="timeline-overlay" id="timeline-overlay" aria-label="历史档案库">
+        <div class="timeline-header">
+          <button class="timeline-close" type="button" data-close-timeline>← 返回首页</button>
+          <div>
+            <span>历史档案库</span>
+            <strong>运河作战地图 · 档案与少年手记</strong>
+          </div>
+        </div>
+        <div class="scroll-track-container">
+          <div class="scroll-rope top-rope"></div>
+          <div class="scroll-track" data-scroll-track>
+            <!-- 由 JS 动态渲染 -->
+          </div>
+          <div class="scroll-rope bottom-rope"></div>
+        </div>
+        <div class="scroll-progress" data-scroll-progress>
+          <!-- 由 JS 动态渲染 -->
+        </div>
+      </section>
+
+      <!-- ═══════════════ 人物资料库 · 战时档案证件 ═══════════════ -->
+      <section class="characters-overlay" id="characters-overlay" aria-label="人物资料库">
+        <div class="timeline-header">
+          <button class="timeline-close" type="button" data-close-characters>← 返回首页</button>
+          <div>
+            <span>人物资料库</span>
+            <strong>身份证件 · 战时档案 · 玩家关系</strong>
+          </div>
+        </div>
+        <div class="filter-tabs" data-filter-tabs></div>
+        <div class="cards-masonry" data-characters-container>
+          <!-- 由 JS 动态渲染 -->
+        </div>
+      </section>
+
+      <!-- ═══════════════ 个人报告 · 古风书信 ═══════════════ -->
+      <section class="report-overlay" id="report-overlay" aria-label="个人报告">
+        <button class="report-close" type="button" data-close-report>← 返回首页</button>
+        <div class="letter-container">
+          <div class="letter-seal" data-letter-seal>
+            <span>运河</span>
+          </div>
+          <div class="letter-paper" data-letter-paper>
+            <div class="letter-inner">
+              <div class="letter-head">
+                <span>运河支队日记</span>
+                <small>—— 个人体验报告 ——</small>
+              </div>
+              <div class="letter-body">
+                <p>同志您好：</p>
+                <p>您已跟随陈水生的视角，亲历了运河支队从组建到抗战胜利的完整历程。您在剧情选择中展现了自己的判断，与支队战士们一同守护了运河两岸的人民。</p>
+                <p>经系统统计，您本次旅程中——</p>
+                <div class="letter-stats">
+                  <div class="letter-stat">
+                    <strong>12</strong>
+                    <span>已记录选择</span>
+                  </div>
+                  <div class="letter-stat">
+                    <strong>5</strong>
+                    <span>历史事件解锁</span>
+                  </div>
+                  <div class="letter-stat">
+                    <strong>100%</strong>
+                    <span>剧情完成度</span>
+                  </div>
+                </div>
+                <p>运河之水奔流不息，英雄精神代代相传。愿您在今后的日子里，也能如运河支队的战士们那般，心怀信念，勇毅前行。</p>
+                <p class="letter-sign">运河支队日记 项目组<br/>敬上</p>
+              </div>
+            </div>
+            <div class="letter-badge" data-letter-badge>
+              <div class="badge-medal">
+                <span class="badge-icon">勋</span>
+                <strong>运河卫士</strong>
+                <small>通关称号</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="toast" data-toast role="status" aria-live="polite"></div>
+    </main>
+
+    <audio data-ambient-audio loop preload="none" volume="0.15">
+      <source src="./assets/audio/canal-ambient.mp3" type="audio/mpeg" />
+    </audio>
+    <button class="audio-toggle" type="button" data-audio-toggle aria-label="环境音效开关" title="环境音效">
+      <span class="audio-icon">🔇</span>
+    </button>
+
+    <script src="./config.js"></script>
+    <script src="./data.js"></script>
+    <script src="./data-fix.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

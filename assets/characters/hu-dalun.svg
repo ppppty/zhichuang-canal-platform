@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="bg_hudalun" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c4631e"/>
+      <stop offset="100%" style="stop-color:#6b2a08"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="100" fill="url(#bg_hudalun)"/>
+  <text x="100" y="120" text-anchor="middle" font-family="KaiTi,楷体,STKaiti,华文楷体,Noto Serif SC,STSong,SimSun,Microsoft YaHei,sans-serif" font-size="55" font-weight="bold" fill="#f5ecd7">大伦</text>
+</svg>
