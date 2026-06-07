@@ -331,111 +331,111 @@ const VIDEO_BASE = (typeof DEPLOY_CONFIG !== "undefined" && DEPLOY_CONFIG.videoB
 
 const gameNodes = {
   prologue_start: {
-    video: "序章/开头+序章（字幕版）.mp4",
+    video: "序章_开头+序章（字幕版）.mp4",
     nextDecision: "dp1_prologue"
   },
   prologue_choice_a: {
-    video: "序章/序章选项A（字幕版）.mp4",
+    video: "序章_序章选项A（字幕版）.mp4",
     nextNode: "chapter1"
   },
   prologue_choice_b: {
-    video: "序章/序章选项B（字幕版）.mp4",
+    video: "序章_序章选项B（字幕版）.mp4",
     nextNode: "chapter1"
   },
   prologue_choice_c: {
-    video: "序章/序章选项C（字幕版）.mp4",
+    video: "序章_序章选项C（字幕版）.mp4",
     nextNode: "chapter1"
   },
   chapter1: {
-    video: "第一章/第一章（字幕版）.mp4",
+    video: "第一章_第一章（字幕版）.mp4",
     nextDecision: "dp2_chapter1"
   },
   ch1_choice_a: {
-    video: "第一章/第一章选项A（字幕版）.mp4",
+    video: "第一章_第一章选项A（字幕版）.mp4",
     nextNode: "ch1_ab_end"
   },
   ch1_choice_b: {
-    video: "第一章/第一章选项B（字幕版）.mp4",
+    video: "第一章_第一章选项B（字幕版）.mp4",
     nextNode: "ch1_ab_end"
   },
   ch1_ab_end: {
-    video: "第一章/第一章选项AB结局（字幕版）.mp4",
+    video: "第一章_第一章选项AB结局（字幕版）.mp4",
     nextNode: "chapter2"
   },
   ch1_choice_c: {
-    video: "第一章/第一章选项C（字幕版）.mp4",
+    video: "第一章_第一章选项C（字幕版）.mp4",
     nextDecision: "dp3_chapter1"
   },
   ch1_c_end1: {
-    video: "第一章/第一章选项C结局走向1（字幕版）.mp4",
+    video: "第一章_第一章选项C结局走向1（字幕版）.mp4",
     nextNode: "chapter2"
   },
   ch1_c_end2: {
-    video: "第一章/第一章选项C结局走向2（字幕版）.mp4",
+    video: "第一章_第一章选项C结局走向2（字幕版）.mp4",
     ending: "bad1"
   },
   chapter2: {
-    video: "第二章/第二章开头.mp4",
+    video: "第二章_第二章开头.mp4",
     nextDecision: "dp4_chapter2"
   },
   ch2_choice_a: {
-    video: "第二章/第二章节点1选项B.mp4",
+    video: "第二章_第二章节点1选项B.mp4",
     nextNode: "ch2_node2"
   },
   ch2_choice_b: {
-    video: "第二章/第二章节点1选项A.mp4",
+    video: "第二章_第二章节点1选项A.mp4",
     nextNode: "ch2_node2"
   },
   ch2_node2: {
-    video: "第二章/第二章节点2.mp4",
+    video: "第二章_第二章节点2.mp4",
     nextDecision: "dp5_chapter2"
   },
   ch2_dp5_choice_a: {
-    video: "第二章/第二章节点2选项A.mp4",
+    video: "第二章_第二章节点2选项A.mp4",
     nextNode: "chapter3"
   },
   ch2_dp5_choice_b: {
-    video: "第二章/第二章节点2选项B.mp4",
+    video: "第二章_第二章节点2选项B.mp4",
     nextNode: "chapter3"
   },
   ch2_dp5_choice_c: {
-    video: "第二章/第二章节点2选项C.mp4",
+    video: "第二章_第二章节点2选项C.mp4",
     ending: "bad2"
   },
   chapter3: {
-    video: "第三章/第三章开头.mp4",
+    video: "第三章_第三章开头.mp4",
     nextDecision: "dp6_chapter3"
   },
   ch3_choice_a: {
-    video: "第三章/第三幕1-1.mp4",
+    video: "第三章_第三幕1-1.mp4",
     nextNode: "victory"
   },
   ch3_choice_b: {
-    video: "第三章/第三幕2-1.mp4",
+    video: "第三章_第三幕2-1.mp4",
     nextNode: "victory"
   },
   ch3_choice_c: {
-    video: "第三章/第三幕3-1.mp4",
+    video: "第三章_第三幕3-1.mp4",
     nextNode: "bad_leadin"
   },
   bad_leadin: {
-    video: "第三章/失败-1.mp4",
+    video: "第三章_失败-1.mp4",
     ending: "bad3"
   },
   victory: {
-    video: "第三章/胜利-1.mp4",
+    video: "第三章_胜利-1.mp4",
     nextDecision: "dp7_chapter3"
   },
   dp7_choice_a: {
-    video: "第三章/返乡1-1.mp4",
+    video: "第三章_返乡1-1.mp4",
     nextNode: "parade"
   },
   dp7_choice_b: {
-    video: "第三章/返乡2-1.mp4",
+    video: "第三章_返乡2-1.mp4",
     nextNode: "parade"
   },
   parade: {
-    video: "第三章/阅兵-1.mp4",
+    video: "第三章_阅兵-1.mp4",
     ending: "good"
   }
 };
