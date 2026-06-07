@@ -9,5 +9,5 @@ const DEPLOY_CONFIG = {
 
   // 视频文件地址（GitHub Release 托管）
   // 本地开发时留空，会自动使用 /videos/（由 serve.js 代理）
-  videoBase: "./videos/"
+  videoBase: "https://ghproxy.com/https://github.com/ppppty/zhichuang-canal-platform/releases/download/videos-v1/"
 };
