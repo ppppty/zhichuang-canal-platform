@@ -7,7 +7,7 @@ const DEPLOY_CONFIG = {
   // 本地开发时留空，会自动使用 /api/chat（由 serve.js 代理）
   apiBase: "https://zhichuang-canal-platform.vercel.app/api/chat",
 
-  // 视频文件地址（jsDelivr CDN 加速，国内友好）
-  // 本地开发时留空，会自动使用 /videos/（由 serve.js 代理）
-  videoBase: "https://cdn.jsdelivr.net/gh/ppppty/zhichuang-canal-platform@master/videos/"
+  // 视频文件地址
+  // 留空 = 使用 /videos/ 本地路径（Vercel 直接托管）
+  videoBase: ""
 };
